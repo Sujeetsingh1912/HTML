@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- internal style -->
+        <style>
+              /* type selector */
+              body {
+                /* background-color: aqua; */
+              }
+              h1{
+                background-color: rgb(167, 114, 45);
+              }
+              p{background-color: blue;}
+              /* id selector */
+              #hh{background-color: pink;}
+              #kk{background-color: yellow;}
+
+              /* class selector */
+              .abc{background-color: violet;}
+              .xyz{background-color: teal;}
+
+
+              /* grouping selector */
+              div,span,u,big,small{background-color: tomato;}
+
+              /* nested selector */
+              ul  li a{color:green;}
+
+   /* ----------------------------------------- */
+   strike{background-color: white;}  /*3rd priority goes to type selector*/
+   #st1{background-color: thistle;}  /*1st priority goes to ID selector*/
+   .vv{background-color: springgreen;}  /*2nd priority goes to Class selector*/
+
+   /* pesudo selectors */
+ a:link{color:green;}
+ a:hover{background-color: yellow;}
+ a:focus{color:brown;}
+ a:active{background-color: rgb(59, 74, 74);}
+a:visited{color: red;}
+ul li:nth-child(even){background-color: brown;}
+ul li:nth-child(odd){background-color: gray}
+</style>
+    </head>
+    <body>
+<ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">Home</a></li>
+    <li><a href="">Home</a></li>
+    <li><a href="">Home</a></li>
+</ul>
+        <a href="http://www.gototraining.com">gototraining</a>
+        <strike id="st1" class="vv">strikout content</strike>
+        <h1>Heading one</h1>
+        <h1 id="hh">Heading one</h1>
+        <h1 id="kk">Heading one</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam nulla cupiditate tenetur aliquam adipisci tempore in! Ducimus, impedit. Suscipit.</p>
+        <p class="abc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam nulla cupiditate tenetur aliquam adipisci tempore in! Ducimus, impedit. Suscipit.</p>
+        <p class="xyz">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam nulla cupiditate tenetur aliquam adipisci tempore in! Ducimus, impedit. Suscipit.</p>
+<div>div tag</div>
+<span>span tag</span>
+<big>big tag</big>
+<small>small tag</small>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+</ul>
+    </body>
+</html>
